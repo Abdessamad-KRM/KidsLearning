@@ -8,12 +8,7 @@ import android.widget.BaseAdapter
 import android.widget.ImageView
 import android.widget.TextView
 import com.example.kids_learning.R
-
-data class LanguageItem(
-    val langue: String,
-    val image: Int,
-    val color: Int
-)
+import com.example.kids_learning.data.LanguageItem
 
 class LangueAdapter(val context: Context,val items: List<LanguageItem>): BaseAdapter() {
 

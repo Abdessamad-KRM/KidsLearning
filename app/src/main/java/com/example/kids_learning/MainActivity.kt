@@ -6,7 +6,7 @@ import android.widget.GridView
 import android.widget.ListView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
-import com.example.kids_learning.adapters.LanguageItem
+import com.example.kids_learning.data.LanguageItem
 import com.example.kids_learning.adapters.LangueAdapter
 
 class MainActivity : AppCompatActivity() {
