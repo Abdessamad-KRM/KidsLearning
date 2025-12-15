@@ -16,7 +16,7 @@ class DrawingView @JvmOverloads constructor(
 
     private val paint = Paint().apply {
         color = ContextCompat.getColor(context, R.color.drawing_color)
-        strokeWidth = 28f
+        strokeWidth = 78f
         style = Paint.Style.STROKE
         strokeCap = Paint.Cap.ROUND
         strokeJoin = Paint.Join.ROUND
@@ -25,7 +25,7 @@ class DrawingView @JvmOverloads constructor(
 
     private val letterPaint = Paint().apply {
         color = ContextCompat.getColor(context, R.color.letter_background)
-        textSize = 500f
+        textSize = 1500f
         textAlign = Paint.Align.CENTER
         alpha = 120 // Semi-transparent
         isAntiAlias = true

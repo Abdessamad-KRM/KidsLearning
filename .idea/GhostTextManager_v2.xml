@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GhostTextManager">
+    <option name="inputs">
+      <map>
+        <entry key="how to dpouble the size of the letters in letterlistactivity">
+          <value>
+            <GhostTextMetaData>
+              <option name="count" value="1.0" />
+              <option name="timestamps">
+                <list>
+                  <option value="1765815014560" />
+                </list>
+              </option>
+            </GhostTextMetaData>
+          </value>
+        </entry>
+        <entry key="i want you to set this listener on the item of the gridview&#10;val frenchCard = findViewById&lt;CardView&gt;(R.id.cardFrench)&#10;val arabicCard = findViewById&lt;CardView&gt;(R.id.cardArabic)&#10;&#10;    frenchCard.setOnClickListener {&#10;        val intent = Intent(this, LetterListActivity::class.java)&#10;        intent.putExtra(&quot;language&quot;, &quot;french&quot;)&#10;        startActivity(intent)&#10;    }&#10;&#10;    arabicCard.setOnClickListener {&#10;        val intent = Intent(this, LetterListActivity::class.java)&#10;        intent.putExtra(&quot;language&quot;, &quot;arabic&quot;)&#10;        startActivity(intent)&#10;    }">
+          <value>
+            <GhostTextMetaData>
+              <option name="count" value="1.0" />
+              <option name="timestamps">
+                <list>
+                  <option value="1765806397544" />
+                </list>
+              </option>
+            </GhostTextMetaData>
+          </value>
+        </entry>
+        <entry key="it does not work">
+          <value>
+            <GhostTextMetaData>
+              <option name="count" value="1.0" />
+              <option name="timestamps">
+                <list>
+                  <option value="1765806643198" />
+                </list>
+              </option>
+            </GhostTextMetaData>
+          </value>
+        </entry>
+        <entry key="now how to change the color of the card of each item">
+          <value>
+            <GhostTextMetaData>
+              <option name="count" value="1.0" />
+              <option name="timestamps">
+                <list>
+                  <option value="1765806806934" />
+                </list>
+              </option>
+            </GhostTextMetaData>
+          </value>
+        </entry>
+        <entry key="you didn't adapteted to this project you should read all the project cause every item display different letters in letterlistactivity and language is already declared in list">
+          <value>
+            <GhostTextMetaData>
+              <option name="count" value="1.0" />
+              <option name="timestamps">
+                <list>
+                  <option value="1765806561536" />
+                </list>
+              </option>
+            </GhostTextMetaData>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
