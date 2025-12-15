@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Kids Learning</string>
+    <string name="french_letters">Lettres Françaises</string>
+    <string name="arabic_letters">الحروف العربية</string>
+    <string name="draw_letter">Tracer: %1$s</string>
+    <string name="well_done_french">Bravo!</string>
+    <string name="well_done_arabic">أحسنت!</string>
+    <string name="try_again_french">Essaie encore!</string>
+    <string name="try_again_arabic">حاول مرة أخرى!</string>
+    <string name="trace_letter_french">Trace la lettre pour continuer</string>
+    <string name="trace_letter_arabic">ارسم الحرف للمتابعة</string>
+    <string name="excellent_french">Très bien tracé!</string>
+    <string name="excellent_arabic">رسم ممتاز!</string>
+</resources>

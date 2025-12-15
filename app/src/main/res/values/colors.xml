@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    
+    <!-- Couleurs adaptées aux enfants -->
+    <color name="background_color">#FFF3E0</color>
+    <color name="french_card_color">#FF5722</color>
+    <color name="arabic_card_color">#4CAF50</color>
+    
+    <!-- Couleurs pour les lettres selon leur statut -->
+    <color name="completed_letter">#4CAF50</color>  <!-- Vert pour réussi -->
+    <color name="failed_letter">#F44336</color>     <!-- Rouge pour échoué -->
+    <color name="locked_letter">#9E9E9E</color>     <!-- Gris pour pas encore accédé -->
+    
+    <!-- Couleurs pour le dessin -->
+    <color name="drawing_color">#2196F3</color>     <!-- Bleu pour le tracé -->
+    <color name="letter_background">#E0E0E0</color> <!-- Gris clair pour la lettre en arrière-plan -->
+    
+    <!-- Couleurs pour les boutons -->
+    <color name="btn_sound_color">#FFC107</color>
+    <color name="btn_clear_color">#F44336</color>
+    <color name="btn_undo_color">#FF9800</color>
+    <color name="btn_validate_color">#4CAF50</color>
+</resources>

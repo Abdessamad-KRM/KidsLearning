@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="120dp"
+    android:viewportWidth="200"
+    android:viewportHeight="120">
+    
+    <!-- Fond coloré -->
+    <path
+        android:fillColor="@color/french_card_color"
+        android:pathData="M20,20 L180,20 Q190,20 190,30 L190,90 Q190,100 180,100 L20,100 Q10,100 10,90 L10,30 Q10,20 20,20 Z" />
+    
+    <!-- Texte Kids -->
+    <path
+        android:fillColor="@android:color/white"
+        android:pathData="M30,45 L35,45 L35,65 L45,50 L50,50 L42,60 L52,75 L47,75 L40,65 L35,70 L35,75 L30,75 Z" />
+    
+    <!-- Texte Learning -->
+    <path
+        android:fillColor="@android:color/white"
+        android:pathData="M60,45 L65,45 L65,70 L80,70 L80,75 L60,75 Z" />
+        
+    <!-- Icône livre -->
+    <path
+        android:fillColor="@color/arabic_card_color"
+        android:pathData="M140,35 L170,35 L170,80 L140,80 Z" />
+        
+    <path
+        android:fillColor="@android:color/white"
+        android:pathData="M145,45 L165,45 L165,50 L145,50 Z" />
+        
+    <path
+        android:fillColor="@android:color/white"
+        android:pathData="M145,55 L165,55 L165,60 L145,60 Z" />
+        
+    <path
+        android:fillColor="@android:color/white"
+        android:pathData="M145,65 L165,65 L165,70 L145,70 Z" />
+</vector>

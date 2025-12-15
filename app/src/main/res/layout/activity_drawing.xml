@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color">
+
+    <!-- Zone de dessin -->
+    <com.example.kids_learning.views.DrawingView
+        android:id="@+id/drawingView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/buttonContainer"
+        android:layout_marginBottom="16dp"
+        android:background="@android:color/white" />
+
+    <!-- Container pour les boutons -->
+    <LinearLayout
+        android:id="@+id/buttonContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center">
+
+        <!-- Bouton Son (en bas à gauche) -->
+        <ImageButton
+            android:id="@+id/btnSound"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/btn_sound"
+            android:src="@drawable/mouth"
+            android:scaleType="fitCenter"
+            android:padding="12dp" />
+
+        <!-- Bouton Effacer tout (à gauche) -->
+        <ImageButton
+            android:id="@+id/btnClear"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/btn_clear"
+            android:src="@drawable/eraser"
+            android:scaleType="fitCenter"
+            android:padding="12dp" />
+
+        <!-- Espace flexible -->
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <!-- Bouton Annuler (en haut à droite) -->
+        <Button
+            android:id="@+id/btnUndo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/btn_undo"
+            android:text="↶"
+            android:textSize="24sp" />
+
+        <!-- Bouton Valider (en bas à droite) -->
+        <ImageButton
+            android:id="@+id/btnValidate"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:background="@drawable/btn_validate"
+            android:src="@drawable/check"
+            android:scaleType="fitCenter"
+            android:padding="12dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
