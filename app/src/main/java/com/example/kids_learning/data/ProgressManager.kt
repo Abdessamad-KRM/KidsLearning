@@ -22,7 +22,6 @@ class ProgressManager(private val context: Context) {
     private val gson = Gson()
     
     init {
-        // Nettoyer les anciennes données corrompues au démarrage
         cleanCorruptedData()
     }
     
@@ -31,7 +30,6 @@ class ProgressManager(private val context: Context) {
         val allEntries = prefs.all
         
         for ((key, value) in allEntries) {
-            // Si la valeur n'est pas une String valide pour LetterStatus, la supprimer
             if (value !is String) {
                 editor.remove(key)
             } else {
@@ -51,12 +49,10 @@ class ProgressManager(private val context: Context) {
 
     fun getProgress(letterId: String): LetterStatus {
         return try {
-            // Essayer d'abord de récupérer comme String
             val statusName = prefs.getString(letterId, null)
             if (statusName != null) {
                 LetterStatus.valueOf(statusName)
             } else {
-                // Si pas de String, vérifier si c'est un Boolean (ancien format)
                 val booleanValue = prefs.getBoolean(letterId, false)
                 if (booleanValue) LetterStatus.COMPLETED else LetterStatus.LOCKED
             }

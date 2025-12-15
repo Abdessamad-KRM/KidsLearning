@@ -23,7 +23,6 @@ class LetterListActivity : AppCompatActivity() {
         val recyclerView = findViewById<RecyclerView>(R.id.recyclerViewLetters)
         recyclerView.layoutManager = GridLayoutManager(this, 4)
         
-        // Configuration RTL pour l'arabe
         if (language == "arabic") {
             recyclerView.layoutDirection = View.LAYOUT_DIRECTION_RTL
         }

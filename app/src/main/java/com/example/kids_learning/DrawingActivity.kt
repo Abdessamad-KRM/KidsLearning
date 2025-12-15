@@ -46,11 +46,9 @@ class DrawingActivity : AppCompatActivity() {
     }
 
     private fun validateDrawing() {
-        // Simulation de validation - dans une vraie app, on analyserait le tracé
         val hasDrawing = drawingView.hasDrawing()
         
         if (hasDrawing) {
-            // Simulation: 70% de chance de réussir
             val isValid = (0..100).random() > 30
             if (isValid) {
                 progressManager.saveProgress(letterId, com.example.kids_learning.data.LetterStatus.COMPLETED)
@@ -133,23 +131,19 @@ class DrawingActivity : AppCompatActivity() {
         try {
             mediaPlayer?.release()
             
-            // Construire le nom du fichier audio
             val soundFileName = if (language == "french") {
                 "fr_${character.lowercase()}"
             } else {
-                // Pour l'arabe, utiliser le nom de l'image
                 val letter = progressManager.loadLetters().find { it.id == letterId }
                 "ar_${letter?.imageResource ?: "alif"}"
             }
             
-            // Charger le fichier depuis res/raw
             val resourceId = resources.getIdentifier(soundFileName, "raw", packageName)
             if (resourceId != 0) {
                 mediaPlayer = MediaPlayer.create(this, resourceId)
                 mediaPlayer?.start()
             }
         } catch (e: Exception) {
-            // Ignorer les erreurs si le fichier n'existe pas
         }
     }
 

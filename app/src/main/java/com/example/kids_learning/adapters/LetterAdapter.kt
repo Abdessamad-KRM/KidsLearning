@@ -32,7 +32,6 @@ class LetterAdapter(
     override fun onBindViewHolder(holder: LetterViewHolder, position: Int) {
         val letter = letters[position]
         
-        // Charger l'image PNG ou afficher le caractère
         val context = holder.itemView.context
         val resourceId = context.resources.getIdentifier(letter.imageResource, "drawable", context.packageName)
         if (resourceId != 0) {
@@ -40,13 +39,11 @@ class LetterAdapter(
             holder.imageLetter.visibility = View.VISIBLE
             holder.textLetter.visibility = View.GONE
         } else {
-            // Si l'image n'existe pas, afficher le caractère
             holder.imageLetter.visibility = View.GONE
             holder.textLetter.visibility = View.VISIBLE
             holder.textLetter.text = letter.character
         }
 
-        // Couleur selon le statut
         val backgroundColor = when (letter.status) {
             LetterStatus.COMPLETED -> ContextCompat.getColor(context, R.color.completed_letter)
             LetterStatus.FAILED -> ContextCompat.getColor(context, R.color.failed_letter)
